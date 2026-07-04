@@ -1,0 +1,86 @@
+---
+const tags = [
+  'Consultant',
+  'Career Counselor',
+  'CEO',
+  'Founder',
+  'Recruiter',
+  'CV & Resume Writer',
+  'Critic',
+  'Father',
+  'Avid Reader',
+];
+---
+
+<section id="top" class="relative bg-ink text-paper overflow-hidden">
+
+  <div class="max-w-content mx-auto px-6 md:px-10 pt-20 md:pt-28 pb-16 md:pb-24 relative grid md:grid-cols-[1.15fr_0.85fr] gap-14 md:gap-10 items-center">
+    <div class="reveal">
+      <p class="compass-line text-paper/70 text-xs tracking-[0.28em] uppercase mb-7">
+        <span class="text-gold font-semibold">Clarity</span>
+        <span class="text-paper/40">·</span>
+        <span class="text-gold font-semibold">Direction</span>
+        <span class="text-paper/40">·</span>
+        <span class="text-gold font-semibold">Growth</span>
+      </p>
+
+      <h1 class="font-display font-semibold leading-[1.08] text-[2.5rem] md:text-[3.4rem] tracking-tight">
+        Mahamudal Hasan Masum
+      </h1>
+
+      <p class="mt-5 font-display italic text-xl md:text-2xl text-paper/85 max-w-xl">
+        Helping students and professionals make clear, confident, globally competitive career decisions.
+      </p>
+
+      <p class="mt-6 text-paper/65 text-base md:text-[1.05rem] leading-relaxed max-w-xl">
+        Founder &amp; CEO of CareerKey.ai and MH Consultancy, based in Dhaka, Bangladesh —
+        working across career planning, business advisory, and international placements.
+      </p>
+
+      <div class="mt-9 flex flex-wrap items-center gap-4">
+        <a
+          href="https://calendly.com/careerkey-ai"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 rounded-full bg-gold text-ink text-sm font-semibold px-6 py-3.5 hover:bg-gold-hover transition-colors duration-200"
+        >
+          Book a Free Consultation
+        </a>
+        <a
+          href="#about"
+          class="inline-flex items-center gap-2 text-sm font-medium text-paper/80 hover:text-paper transition-colors duration-200 px-2 py-3.5"
+        >
+          Learn more about my work ↓
+        </a>
+      </div>
+
+      <ul class="mt-11 flex flex-wrap gap-x-3 gap-y-2" aria-label="Roles and identities">
+        {tags.map((t) => (
+          <li class="text-xs text-paper/55 border border-paper/15 rounded-full px-3.5 py-1.5">
+            {t}
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <!-- Credential plate: a quiet, premium card echoing a brass nameplate -->
+    <div class="reveal justify-self-center md:justify-self-end w-full max-w-sm">
+      <div class="rounded-card border border-gold/25 bg-ink-soft/60 p-8 shadow-premium">
+        <p class="eyebrow text-gold/90 mb-4">Currently Building</p>
+        <div class="space-y-5">
+          <div>
+            <p class="font-display text-lg font-medium text-paper">CareerKey.ai</p>
+            <p class="text-sm text-paper/55 mt-1">Bangladesh's first AI-powered career guidance platform for school and university students.</p>
+          </div>
+          <div class="h-px bg-paper/10"></div>
+          <div>
+            <p class="font-display text-lg font-medium text-paper">MH Consultancy</p>
+            <p class="text-sm text-paper/55 mt-1">Personalized business advisory for individuals and companies navigating local and international markets.</p>
+          </div>
+        </div>
+        <div class="h-px bg-paper/10 my-6"></div>
+        <p class="text-xs text-paper/45">Dhaka, Bangladesh · On-site, Hybrid &amp; Remote</p>
+      </div>
+    </div>
+  </div>
+</section>

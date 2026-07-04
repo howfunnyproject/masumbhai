@@ -1,0 +1,20 @@
+{
+  "name": "mahamudal-hasan-masum-portfolio",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^4.16.0",
+    "@astrojs/tailwind": "^5.1.2",
+    "@astrojs/sitemap": "3.2.1",
+    "tailwindcss": "^3.4.13",
+    "lucide-static": "^0.451.0"
+  }
+}
