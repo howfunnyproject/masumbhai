@@ -1,0 +1,27 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="bg-ink text-paper/60 py-14">
+  <div class="max-w-content mx-auto px-6 md:px-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+    <div>
+      <p class="font-display text-lg text-paper">Mahamudal Hasan Masum</p>
+      <p class="text-sm mt-1">Dhaka, Bangladesh</p>
+    </div>
+
+    <nav class="flex flex-wrap gap-x-6 gap-y-2 text-sm" aria-label="Footer">
+      <a href="#about" class="hover:text-paper transition-colors">About</a>
+      <a href="#services" class="hover:text-paper transition-colors">Services</a>
+      <a href="#experience" class="hover:text-paper transition-colors">Experience</a>
+      <a href="https://mahamudal.substack.com" target="_blank" rel="noopener noreferrer" class="hover:text-paper transition-colors">Newsletter</a>
+      <a href="https://calendly.com/careerkey-ai" target="_blank" rel="noopener noreferrer" class="hover:text-paper transition-colors">Consultation</a>
+    </nav>
+  </div>
+
+  <div class="max-w-content mx-auto px-6 md:px-10 mt-10 pt-6 border-t border-paper/10 flex flex-col md:flex-row md:items-center md:justify-between gap-3 text-xs">
+    <p>© {year} Mahamudal Hasan Masum. All rights reserved.</p>
+    <p class="compass-line text-paper/40">
+      <span class="text-gold/80">Clarity</span> · <span class="text-gold/80">Direction</span> · <span class="text-gold/80">Growth</span>
+    </p>
+  </div>
+</footer>

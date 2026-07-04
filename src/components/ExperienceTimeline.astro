@@ -1,0 +1,85 @@
+---
+const experience = [
+  {
+    role: 'Founder and CEO',
+    org: 'CareerKey.ai',
+    duration: 'Apr 2023 – Present (Full-time)',
+    location: 'Dhaka, Bangladesh (On-site)',
+    description:
+      "Building Bangladesh's first AI-powered career guidance platform tailored for school and university students. Designed to assist with career planning, CV building, and international placements.",
+    current: true,
+  },
+  {
+    role: 'CEO',
+    org: 'MH Consultancy',
+    duration: null,
+    location: null,
+    description:
+      'Providing personalized business advisory services, profile optimization, communication enhancement strategies, and guidance for navigating local and international markets.',
+    current: true,
+  },
+  {
+    role: 'Business Development Advisor',
+    org: 'Shenzhen Techstar Electronics Incorporated Corporation',
+    duration: 'Nov 2019 – Apr 2022 (Permanent)',
+    location: 'Shenzhen, Guangdong, China (On-site)',
+    description: 'Focused on strategic expansion. Spearheaded the growth of the international trade division.',
+  },
+  {
+    role: 'Supply Chain Merchandiser',
+    org: 'MTailor',
+    duration: 'May 2017 – Dec 2018 (Permanent)',
+    location: 'Dhaka, Bangladesh (On-site)',
+    description:
+      'Worked with a U.S.-based made-to-measure menswear company revolutionizing the RMG industry by combining precision tech with direct-to-consumer infrastructure.',
+  },
+  {
+    role: 'Sourcing Merchandiser (Formal Wear)',
+    org: 'GRRAY FASHIONS UK LTD',
+    duration: 'Jan 2013 – May 2017',
+    location: 'Dhaka, Bangladesh',
+    description: 'Oversaw product development and sourcing of formalwear (suits, trousers, shirts) for UK and European clients.',
+  },
+  {
+    role: 'Product Development Merchandiser',
+    org: 'Dewhirst',
+    duration: 'Jan 2016 – Jul 2016 (Contract)',
+    location: 'Dhaka, Bangladesh (On-site)',
+    description: 'Managed product development for major accounts like Matalan, Greenwood, and Next.',
+  },
+];
+---
+
+<section id="experience" class="bg-paper py-20 md:py-28">
+  <div class="max-w-content mx-auto px-6 md:px-10">
+    <div class="reveal max-w-2xl mb-16">
+      <p class="eyebrow mb-4">Experience</p>
+      <h2 class="font-display text-3xl md:text-[2.4rem] font-semibold text-ink leading-tight">
+        A path from global manufacturing to founding
+      </h2>
+    </div>
+
+    <ol class="relative border-l border-black/10 pl-8 md:pl-12 space-y-14">
+      {experience.map((e) => (
+        <li class="reveal relative">
+          <!-- spine node: gold if current, muted otherwise -->
+          <span
+            class:list={[
+              'absolute -left-[2.35rem] md:-left-[3.35rem] top-1 w-3 h-3 rounded-full border-2',
+              e.current ? 'bg-gold border-gold' : 'bg-paper border-black/25',
+            ]}
+            aria-hidden="true"
+          ></span>
+
+          <p class="text-xs font-semibold tracking-[0.16em] uppercase text-gold">
+            {e.duration ?? 'Ongoing'}
+          </p>
+          <h3 class="mt-2 font-display text-xl font-semibold text-ink">{e.role}</h3>
+          <p class="text-sm font-medium text-text-secondary">{e.org}</p>
+          {e.location && <p class="text-xs text-text-secondary/80 mt-0.5">{e.location}</p>}
+          <p class="mt-3 text-[0.98rem] text-text-primary leading-relaxed max-w-2xl">{e.description}</p>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>
